@@ -15,11 +15,8 @@ function App() {
   return (
     <div className="App">
       <Header name={name} lastname={lastname}/>
-      
-      <main>
-     
-      </main>
-      <Footer></Footer>
+      <About />
+      <Footer />
     </div>
   );
 }
