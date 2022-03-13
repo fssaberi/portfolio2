@@ -8,7 +8,7 @@ function Nav() {
                 About Me
             </span>
             <span>
-                Project
+                Projects
             </span>
             <span>
                 Resume
