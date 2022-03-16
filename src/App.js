@@ -12,10 +12,25 @@ function App() {
   const lastname = "Brizendine"
 
   const [contactSelected, setContactSelected] = useState(false);
+
+  const [page, setPage] = useState("About Me");
+
+  function renderPage(page) {
+    if (page === "About Me") {
+      return <About />
+    }
+    if (page === "Projects") {
+      return <Project />
+    }
+    if (page === "Contact") {
+      return <ContactForm />
+    }
+  }
+
   return (
     <div className="App">
-      <Header name={name} lastname={lastname}/>
-      <About />
+      <Header name={name} lastname={lastname} setPage={setPage} page={page}/>
+      {renderPage(page)}
       <Footer />
     </div>
   );
